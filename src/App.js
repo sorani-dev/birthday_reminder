@@ -6,8 +6,8 @@ function App() {
   return (
     <main>
       <section className="container">
-          <h3>0 birthdays today</h3>
-          <List />
+          <h3>{data.length} birthdays today</h3>
+          <List people={data} />
       </section>
     </main>
   );

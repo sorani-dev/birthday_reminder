@@ -1,9 +1,14 @@
 import React from 'react'
 
-const List = () => {
+const List = (props) => {
+	const { people } = props
 	return (
 		<>
-			<h2>list component</h2>
+			{people.map(person => (
+				<p key={person.id}>{person.name}</p>
+
+			))}
+
 		</>
 	)
 }
